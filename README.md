@@ -24,10 +24,12 @@ We have no standard IDE. Devs are currently using:
   - \- Infrequent updates
   - \- Broken package manager
   - \- Paid license
+  - \- Errors when using Watchman
 - [Atom](https://atom.io/)
   - \+ FOSS clone of SublimeText
   - \+ Great package / plugin ecosystem
   - \- Slow and resource heavy
+  - \- Errors when using Watchman
 - [WebStorm](https://www.jetbrains.com/webstorm/)
   - \+ Built-in debugger
   - ? Prescribed workflow / defaults
@@ -45,7 +47,13 @@ Currently using Vagrant/VirtualBox with a maintained [default ubuntu box](https:
 
 ## Language
 
-[ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) with EmberCLI for frontend transpilation. [Browserify](http://browserify.org/) for all non-ember projects.
+### ES6
+with EmberCLI for frontend transpilation
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+- http://babeljs.io/docs/learn-es2015/
+- https://ponyfoo.com/articles/es6
+
+[Browserify](http://browserify.org/) for all non-ember projects.
 
 [node-standard-style](https://github.com/feross/standard)
 
@@ -106,11 +114,12 @@ Fixtures should be used during development to mock real user data.
 
 After moving to production migrations must be created and tracked in git.
 
-Likely to use [loopback-db-migrate](https://github.com/slively/loopback-db-migrate) or an extension of it
+Likely to use [loopback-db-migrate](https://github.com/slively/loopback-db-migrate) or an extension of it.
+  - Needs support for transactions / rollbacks
 
 ### Backend
 
-- node.js 4.2.1 LTS
+- node.js 4.2.* LTS
 - npm
   - Currently there is no LTS version of npm. npm3 breaks a large number of packages. We should be using the latest version of npm2 until a LTS version becomes available.
 - StrongLoop Loopback
@@ -123,12 +132,15 @@ Likely to use [loopback-db-migrate](https://github.com/slively/loopback-db-migra
 
 ### Frontend
 
-- Ember 2
+- Ember 2.*.*
   - Good upgrade paths
   -  Out of the box [JSON API](http://jsonapi.org/) support
   - Per-project minor version as there are frequent changes and fixes. Should aim to keep projects up to date.
-- SCSS
-  - Sensible grouping of styling rules
+- [Dockyard Ember Style Guide](https://github.com/dockyard/styleguides/blob/master/engineering/ember.md)
+- SCSS support allowed
+- Sensible grouping of styling rules e.g.
+  - SCSS files grouping widgets and page specific rules
+  - A single CSS file grouped into blocks of rules
 
 ### Mobile
 
@@ -161,6 +173,8 @@ Pending decision making. Currently all projects have their own testing standards
 
 All dependencies should be kept at a fixed version to prevent bugs being introduced.
 
+Use `-E` or `--save-exact` with npm to save an exact version rather than using npm's default semver range operator.
+
 ## Areas of Investigation / TODO:
 
 - Archiving of old private github repositories
@@ -171,13 +185,11 @@ All dependencies should be kept at a fixed version to prevent bugs being introdu
 - SublimeText notes pulled into this repo
 - Better Postgresql client
 - psql not enabled on rackspace servers
-- Check Node versions available on AWS
 - Need to define a criteria for finding/vetting ember packages
   - Ember observer?
   - Ember plugins?
 - Check on es6 runtime transpilation from jiggl
 - Nodeschool for Ramda
-- Decision making on Ember testing best practices
 - Migrations / Schema Management Standard
 - Authorization
 - Node Version Management
@@ -191,7 +203,9 @@ All dependencies should be kept at a fixed version to prevent bugs being introdu
   - Dumb REST APIs or complex objects?
   - Managing complexity in Ember
 - Ed's clean/install dependencies checkout script
-- npm plugin for fixing package versions by default
-- Otto / Docker (Ersin/Richie)
-- Ember observer (Patrick to check canonical ember deployment)
-- David Dependency-dependency tracking serice.
+  - https://gist.github.com/anotheredward/1f4b0e412b1ce6a358ab
+- [Otto](https://ottoproject.io/) / Docker (Ersin/Richie)
+- [Ember observer](http://emberobserver.com/)
+  - Patrick to check canonical ember deployment
+- [David](https://david-dm.org/) Dependency-dependency tracking serice.
+- [Flow](http://flowtype.org/)
