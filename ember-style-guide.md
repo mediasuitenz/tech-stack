@@ -104,7 +104,7 @@ app/
 
 ### Using Routes, Controllers, Components
 
-1. Route templates should do nothing more than invoke components.
+#### Route templates should do nothing more than invoke components.
 
 Good:
 
@@ -128,7 +128,7 @@ Bad:
 
 ```
 
-2. Route-level components should be named to match the route path
+#### Route-level components should be named to match the route path
 
 By looking at the `permit/view` route, I should be able to intuit that there is a component called `permit-view`.
 
@@ -145,9 +145,9 @@ app/
         template.hbs
 ```
 
-3. Controllers should be used for defining and setting query-parameters and nothing else.
+#### Controllers should be used for defining and setting query-parameters and nothing else.
 
-4. Query-parameter configuration should live in a single file that is imported into the route and controller.
+#### Query-parameter configuration should live in a single file that is imported into the route and controller.
 
 Bad (aka straight from [the ember guides...](https://guides.emberjs.com/v2.3.0/routing/query-params/))
 - need to make sure router and controller configurations match up 100%
@@ -228,9 +228,10 @@ export default Ember.Controller.extend(controllerConfig, {
 })
 ```
 
-5. Keep code within Routes, Controllers, Components to a minimum, especially within action handlers
-    1. Pull out any transforms or procedural code into pure functions.
-    2. limit action handlers to "glue" code
+#### Keep code within Routes, Controllers, Components to a minimum, especially within action handlers
+
+1. Pull out any transforms or procedural code into pure functions.
+2. limit action handlers to "glue" code
 
 Examples
 
@@ -434,7 +435,7 @@ export default Base.extend({
 
 ### Misc.
 
-1. Use the functional form of getters and setters instead of object methods
+#### Use the functional form of getters and setters instead of object methods
 
 Example
 
