@@ -199,7 +199,7 @@ export const makeControllerMixin = R.converge(            // {a: {defaultValue: 
 
 ```javascript
 // my-route/query-params.js
-import {makeRouterMixin, makeRouterMixin} from 'app/utils/query-params'
+import {makeRouterMixin, makeControllerMixin} from 'app/utils/query-params'
 const config = {
   date: {
     defaultValue: null,   // goes to the controller
