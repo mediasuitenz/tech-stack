@@ -242,7 +242,7 @@ Bad:
 - The action handler is mixing data-transform with data-flow
 - Keeping everything in action handlers can result in spaghetti code blocks
 
-```
+```javascript
 export default Ember.Component.extend({
   format: 'YYYY-MM-DD',
   // ...
@@ -270,7 +270,7 @@ Good:
 - Easier to document
 - `formatDate` is reusable if necessary
 
-```
+```javascript
 
 export default Ember.Component.extend({
   format: 'YYYY-MM-DD',
@@ -443,7 +443,7 @@ Good:
 - Allows you to interchange ember objects with POJOs, aka it's safer
 - Consistent usage when you use the `get` or `set` method on POJOs
 - tmp has been using this with success
-```
+```javascript
 const {get} = Ember
 
 // Works on Ember objects
@@ -455,7 +455,7 @@ get({model: {name: 'Mike'}}, 'model.name') // -> "Mike"
 
 Bad:
 - looks a bit better when you chain a bunch of stuff together
-```
+```javascript
 // Works on Ember objects
 this.get('model.name') // -> "Mike"
 
