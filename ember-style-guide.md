@@ -175,10 +175,10 @@ Good
 //component
 export default Ember.Component.extend({
   user: {}, // bind
-  isCurrentUser: false,
-  init () {
-    set(this, 'isCurrentUser', get(user, 'id') === get(this, 'session.currentUser.id'))
-}
+  isCurrentUser: Ember.computed('user', 'session.currentUser', function () {
+    return get(this, 'user.id') === get(this, 'session.currentUser.id')
+  })
+})
 ```
 
 #### Query-parameter configuration should live in a single file that is imported into the route and controller.
