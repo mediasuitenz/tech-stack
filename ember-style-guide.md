@@ -175,6 +175,7 @@ Good
 //component
 export default Ember.Component.extend({
   user: {}, // bind
+  session: Ember.inject(),
   isCurrentUser: Ember.computed('user', 'session.currentUser', function () {
     return get(this, 'user.id') === get(this, 'session.currentUser.id')
   })
