@@ -314,7 +314,7 @@ model (params) {
 Good
 ```javascript
 model (params) {
-  return {
+  return Ember.RSVP.hash({
     user: this.store.findRecord('user', params.user_id)
   }
 }
