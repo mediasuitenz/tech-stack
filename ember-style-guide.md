@@ -297,6 +297,27 @@ export function formatDate (date, format) {
 
 ```
 
+### Always wrap model hook return value in an object
+Having a value as the return type makes future maintenace of templates clumsy, error prone, and makes the templates less descriptive.
+
+Routes should be simple enough to only require one model (preferably automagically specified by a dynamic route segment), but currently this is often not the case.
+
+Bad
+```javascript
+model (params) {
+  return this.store.findRecord('user', params.user_id)
+}
+```
+
+Good
+```javascript
+model (params) {
+  return {
+    user: this.store.findRecord('user', params.user_id)
+  }
+}
+```
+
 ### Services
 
 1. Use a service for any global application state
