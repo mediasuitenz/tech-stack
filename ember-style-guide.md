@@ -298,9 +298,11 @@ export function formatDate (date, format) {
 ```
 
 ### Always wrap model hook return value in an object
-Having a value as the return type makes future maintenace of templates clumsy, error prone, and makes the templates less descriptive.
+#### Praise
+Wrapping the value makes template variables more descriptive and makes adding new models easy.
 
-Routes should be simple enough to only require one model (preferably automagically specified by a dynamic route segment), but currently this is often not the case.
+#### Criticism
+Routes *should* be simple enough to only require one model, preferably automagically specified by a dynamic route segment, but this is often not the case.
 
 Bad
 ```javascript
