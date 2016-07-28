@@ -164,6 +164,7 @@ Likely to use [loopback-db-migrate](https://github.com/slively/loopback-db-migra
 - [babel](https://babeljs.io/)
 - [mochajs](https://mochajs.org/)
 - [nsp](https://nodesecurity.io/tools)
+- [ember-ajax](http://emberobserver.com/addons/ember-ajax)
 
 #### Testing
 
