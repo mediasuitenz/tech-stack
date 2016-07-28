@@ -309,6 +309,9 @@ Bad
 model (params) {
   return this.store.findRecord('user', params.user_id)
 }
+
+Acceptable: No route file because the model is automatically found via a dynamic segment in the url.
+
 ```
 
 Good
