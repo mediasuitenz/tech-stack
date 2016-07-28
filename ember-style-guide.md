@@ -332,6 +332,32 @@ export function formatDate (date, format) {
 
 ```
 
+### Always wrap model hook return value in an object
+#### Praise
+Wrapping the value makes template variables more descriptive and makes adding new models easy.
+
+#### Criticism
+Routes *should* be simple enough to only require one model, preferably automagically specified by a dynamic route segment, but this is often not the case.
+
+Bad
+```javascript
+model (params) {
+  return this.store.findRecord('user', params.user_id)
+}
+
+Acceptable: No route file because the model is automatically found via a dynamic segment in the url.
+
+```
+
+Good
+```javascript
+model (params) {
+  return Ember.RSVP.hash({
+    user: this.store.findRecord('user', params.user_id)
+  }
+}
+```
+
 ### Services
 
 1. Use a service for any global application state
