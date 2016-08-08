@@ -57,6 +57,12 @@ with EmberCLI for frontend transpilation
 
 [node-standard-style](https://github.com/feross/standard)
 
+Don't forget to set:
+```bash
+npm config set save=true
+npm config set save-exact=true
+```
+
 ### Hosting
 
 
