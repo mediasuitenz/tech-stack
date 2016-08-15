@@ -30,6 +30,8 @@ alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--
 </body>
 ```
 * if either request works, you may have a CSRF problem
+* CSRF has some pretty strict limitations, eg: It can't POST a JSON payload
+* [List of Limitations/General info](https://github.com/pillarjs/understanding-csrf)
 * Fix: [csurf](https://github.com/expressjs/csurf)
 
 ## 4 Password Brute Forcing
