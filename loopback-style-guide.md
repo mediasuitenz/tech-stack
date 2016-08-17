@@ -1,7 +1,7 @@
 # Media Suite Emberjs Style Guide
 
 ## Prototype over static functions in model Custom Routes
-                                 
+
 * We should prefer using prototype model methods over static methods when tying to a custom end-point. Consider this static declaration route:
 
 ```javascript
@@ -29,7 +29,7 @@
        ...
 ```
 
-* In this example, we are required to look up the target model as one of the first operations of the method, and then check this was a valid model. 
+* In this example, we are required to look up the target model as one of the first operations of the method, and then check this was a valid model.
 * All this can be handled for us if we use prototype methods, in the following structure:
 
 ```javascript
@@ -44,7 +44,6 @@
  })
 
  Worksite.prototype.startWork = function (data, cb) {
-   const worksite = this
    ...
 ```
 
@@ -52,7 +51,6 @@
 * This mechanism reduces the code required in your Model methods.
 * **Note** It is important to use traditional function declarations over ES6 arrow functions when declaring your prototype, otherwise the `this` keyword will not have the correct context.
 I.e.
-* Convention: assign the model name to this as the first line of the method.
 * slc generator is useful here `slc loopback:remote-method`
 
 ```javascript
@@ -64,7 +62,7 @@ Not
 ```javascript
 Worksite.prototype.startWork = (data, cb) => {
 ```
-                                 
+
 ## Things to be aware of with Loopback and Postgres
 So I ran a sql injection fuzzer https://github.com/sqlmapproject/sqlmap on the search endpoint to see what I could dig up. As far as I can tell there was no successful injection - but I did uncover two crashes at the pg level, so the takeaway is:
 
