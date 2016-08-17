@@ -96,6 +96,18 @@ There is no current preference on using a deployment management system, depends 
 
 We will avoid zero-downtime deployments if possible.
 
+#### Merge strategy
+
+Modern projects at Media Suite use the Git Flow pattern for merging and shipping code.
+We love [this](http://nvie.com/posts/a-successful-git-branching-model/) post which covers how and why we use pattern.
+
+- When working on features, always branch from the `develop` branch.
+- When creating PR's always target them at the `develop` branch.
+- Development deployments should be from the `develop` branch.
+- The `master` branch always represents what is currently deployed in the `production` environment.
+- If a separate release needs to be cut (I.E user acceptance testing or demo), this will be a branch from develop.
+
+
 ### Databases
 
 Database requirements vary depending on projects and clients.
