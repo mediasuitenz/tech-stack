@@ -53,6 +53,7 @@
 * **Note** It is important to use traditional function declarations over ES6 arrow functions when declaring your prototype, otherwise the `this` keyword will not have the correct context.
 I.e.
 * Convention: assign the model name to this as the first line of the method.
+* slc generator is useful here `slc loopback:remote-method`
 
 ```javascript
 Worksite.prototype.startWork = function (data, cb) {
