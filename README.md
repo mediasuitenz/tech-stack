@@ -1,5 +1,59 @@
 # Media Suite Tech
 
+### Standard Tools
+
+- ES6
+- nodejs 4.2.* LTS
+- npm2
+- [Ember 2.*](http://emberjs.com/)
+- [Loopback](https://strongloop.com/node-js/loopback-framework/)
+- [node-standard-style](https://github.com/feross/standard) Linting
+- [Moment.js](http://momentjs.com/) Time Library
+- [ramda](https://github.com/ramda/ramda) Utility Library
+- [bluebird](http://bluebirdjs.com) Potential Promise Library
+
+### Other tools
+- Silverstripe CMS, Required for government projects
+- Cordova/PhoneGap for Mobile, eg: Cruise Guide
+- [ember-cli-ramda-extended](https://github.com/mediasuitenz/ember-cli-ramda-extended)
+- [ramda-extended](https://github.com/mediasuitenz/ramda-extended)
+- [ramda-extended-rsvp](https://github.com/mediasuitenz/ramda-extended-rsvp) 
+- [envoodoo](https://github.com/digitalsadhu/envoodoo) , Windows support?
+- [xyz](https://www.npmjs.com/package/xyz) , For npm packages 
+- [Browserify](http://browserify.org/) for non-ember projects
+ 
+### Databases
+
+Database requirements vary depending on projects and clients.
+
+- [Postgresql](http://www.postgresql.org/) for most projects.
+- [PostGIS](http://postgis.net/) for any geospatial projects
+- [MSSQL](https://www.microsoft.com/en-us/server-cloud/products/sql-server/) when required
+- [Redis](http://redis.io/) for queues, caching, fast key-value stores
+- [MariaDB](https://mariadb.org/) if required to use MySQL
+
+#### Testing
+
+Pending decision making. Currently all projects have their own testing standards.
+
+#### Merge strategy
+
+Modern projects at Media Suite use the Git Flow pattern for merging and shipping code.
+We love [this](http://nvie.com/posts/a-successful-git-branching-model/) post which covers how and why we use pattern.
+
+- When working on features, always branch from the `develop` branch.
+- When creating PR's always target them at the `develop` branch.
+- Development deployments should be from the `develop` branch.
+- The `master` branch always represents what is currently deployed in the `production` environment.
+- If a separate release needs to be cut (I.E user acceptance testing or demo), this will be a branch from develop.
+
+#### Versioning dependencies
+
+All dependencies should be kept at a fixed version to prevent bugs being introduced.
+
+Use `-E` or `--save-exact` with npm to save an exact version rather than using npm's default semver range operator.
+
+
 ## Development Environment
 
 ### SCM
@@ -30,35 +84,17 @@ We have no standard IDE. Devs are currently using:
   - \+ Great package / plugin ecosystem
   - \- Slow and resource heavy
   - \- Errors when using Watchman
+- [VS Code](https://code.visualstudio.com/)
+  - \+ Awesome Debugger
+  - \+ Works well out of the box, eg: Intellisense
+  - \- Limited features/Plugins when compared to Atom
 - [WebStorm](https://www.jetbrains.com/webstorm/)
   - \+ Built-in debugger
   - ? Prescribed workflow / defaults
   - \- Paid license
 
-IDE requirements for the future:
-- Must be able to use [standard](https://github.com/feross/standard) linting and formatting.
-- Must be able to support backend debugging
-
-### Virtual Machines
-
-Currently using Vagrant/VirtualBox with a maintained [default ubuntu box](https://github.com/mediasuitenz/vagrant-basebox)
-
-## Current Tech
-
-## Language
-
-### ES6
-with EmberCLI for frontend transpilation
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
-- http://babeljs.io/docs/learn-es2015/
-- https://ponyfoo.com/articles/es6
-
-[Browserify](http://browserify.org/) for all non-ember projects.
-
-[node-standard-style](https://github.com/feross/standard)
 
 ### Hosting
-
 
 All projects will have unique hosting requirements and constraints.
 
@@ -95,130 +131,3 @@ There is no current preference on using a deployment management system, depends 
 - Docker on AWS or Rackspace
 
 We will avoid zero-downtime deployments if possible.
-
-#### Merge strategy
-
-Modern projects at Media Suite use the Git Flow pattern for merging and shipping code.
-We love [this](http://nvie.com/posts/a-successful-git-branching-model/) post which covers how and why we use pattern.
-
-- When working on features, always branch from the `develop` branch.
-- When creating PR's always target them at the `develop` branch.
-- Development deployments should be from the `develop` branch.
-- The `master` branch always represents what is currently deployed in the `production` environment.
-- If a separate release needs to be cut (I.E user acceptance testing or demo), this will be a branch from develop.
-
-
-### Databases
-
-Database requirements vary depending on projects and clients.
-
-- [Postgresql](http://www.postgresql.org/) for most projects.
-- [PostGIS](http://postgis.net/) for any geospatial projects
-- [MSSQL](https://www.microsoft.com/en-us/server-cloud/products/sql-server/) when required
-- [Redis](http://redis.io/) for queues, caching, fast key-value stores
-- [MariaDB](https://mariadb.org/) if required to use MySQL
-
-#### Migrations and Schema Management
-
-Current practice is to not create migrations during development, and instead maintain a schema and fixtures for devs.
-
-Fixtures should be used during development to mock real user data.
-
-After moving to production migrations must be created and tracked in git.
-
-Likely to use [loopback-db-migrate](https://github.com/slively/loopback-db-migrate) or an extension of it.
-  - Needs support for transactions / rollbacks
-
-### Backend
-
-- node.js 4.2.* LTS
-- npm
-  - Currently there is no LTS version of npm. npm3 breaks a large number of packages. We should be using the latest version of npm2 until a LTS version becomes available.
-- StrongLoop Loopback
-- [loopback-component-jsonapi](https://github.com/digitalsadhu/loopback-component-jsonapi)
-  - In development by Richie and not yet feature-complete.
-  - Hope to hand this module over to StrongLoop for maintenance.
-- Silverstripe
-  - Get a CMS and website for free
-  - Required for government projects
-
-### Frontend
-
-- Ember 2.*.*
-  - Good upgrade paths
-  -  Out of the box [JSON API](http://jsonapi.org/) support
-  - Per-project minor version as there are frequent changes and fixes. Should aim to keep projects up to date.
-- [Dockyard Ember Style Guide](https://github.com/dockyard/styleguides/blob/master/engineering/ember.md)
-- SCSS support allowed
-- Sensible grouping of styling rules e.g.
-  - SCSS files grouping widgets and page specific rules
-  - A single CSS file grouped into blocks of rules
-
-### Mobile
-
-- Cordova/PhoneGap
-- Standard project template will be extracted from CGFM
-
-### Standard Libraries / Tools
-
-- [ramda](https://github.com/ramda/ramda)
-- [ember-cli-ramda-extended](https://github.com/mediasuitenz/ember-cli-ramda-extended)
-- [ramda-extended](https://github.com/mediasuitenz/ramda-extended)
-- [ramda-extended-rsvp](https://github.com/mediasuitenz/ramda-extended-rsvp)
-- [ember-simple-auth](https://github.com/simplabs/ember-simple-auth)
-  - Loopback compatible library will be extracted from TMP for future projects
-- [envoodoo](https://github.com/digitalsadhu/envoodoo)
-  - Needs Windows support
-- [xyz](https://www.npmjs.com/package/xyz)
-  - For deploying npm packages, not for our project deployments
-- [Moment.js](http://momentjs.com/)
-  - [frozen-moment](https://github.com/WhoopInc/frozen-moment)
-- [babel](https://babeljs.io/)
-- [mochajs](https://mochajs.org/)
-- [nsp](https://nodesecurity.io/tools)
-- [ember-ajax](http://emberobserver.com/addons/ember-ajax)
-
-#### Testing
-
-Pending decision making. Currently all projects have their own testing standards.
-
-#### Versioning dependencies
-
-All dependencies should be kept at a fixed version to prevent bugs being introduced.
-
-Use `-E` or `--save-exact` with npm to save an exact version rather than using npm's default semver range operator.
-
-## Areas of Investigation / TODO:
-
-- Archiving of old private github repositories
-- VisualStudio Code Debugging
-- precommit standard linting
-- Node/Backend Debugging
-  - loopback-cli REPL debugging
-- SublimeText notes pulled into this repo
-- Better Postgresql client
-- psql not enabled on rackspace servers
-- Need to define a criteria for finding/vetting ember packages
-  - Ember observer?
-  - Ember plugins?
-- Check on es6 runtime transpilation from jiggl
-- Nodeschool for Ramda
-- Migrations / Schema Management Standard
-- Authorization
-- Node Version Management
-- Moving packages to MS account (Richie)
-- autosave components (Ember 1.12)
-- offline-storage (Matt)
-- SPA versioning / caching
-  - Spike into notifying UA
-- Authorization
-- Backend/Frontend Architecture
-  - Dumb REST APIs or complex objects?
-  - Managing complexity in Ember
-- Ed's clean/install dependencies checkout script
-  - https://gist.github.com/anotheredward/1f4b0e412b1ce6a358ab
-- [Otto](https://ottoproject.io/) / Docker (Ersin/Richie)
-- [Ember observer](http://emberobserver.com/)
-  - Patrick to check canonical ember deployment
-- [David](https://david-dm.org/) Dependency-dependency tracking serice.
-- [Flow](http://flowtype.org/)
