@@ -1,7 +1,5 @@
 # Media Suite Tech
 
-## Current Tech
-
 ### Standard Tools
 
 - ES6
@@ -9,12 +7,10 @@
 - npm2
 - [Ember 2.*](http://emberjs.com/)
 - [Loopback](https://strongloop.com/node-js/loopback-framework/)
-- [node-standard-style](https://github.com/feross/standard)
-- [Moment.js](http://momentjs.com/)
-- [ramda](https://github.com/ramda/ramda)
-- [bluebird](http://bluebirdjs.com)
-
-- Ember 2.*.*
+- [node-standard-style](https://github.com/feross/standard) Linting
+- [Moment.js](http://momentjs.com/) Time Library
+- [ramda](https://github.com/ramda/ramda) Utility Library
+- [bluebird](http://bluebirdjs.com) Potential Promise Library
 
 ### Other tools
 - Silverstripe CMS, Required for government projects
