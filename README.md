@@ -30,6 +30,10 @@ We have no standard IDE. Devs are currently using:
   - \+ Great package / plugin ecosystem
   - \- Slow and resource heavy
   - \- Errors when using Watchman
+- [VS Code](https://code.visualstudio.com/)
+  - \+ Awesome Debugger
+  - \+ Works well out of the box, eg: Intellisense
+  - \- Limited features/Plugins when compared to Atom
 - [WebStorm](https://www.jetbrains.com/webstorm/)
   - \+ Built-in debugger
   - ? Prescribed workflow / defaults
