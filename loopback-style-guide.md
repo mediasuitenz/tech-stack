@@ -1,4 +1,4 @@
-# Media Suite Emberjs Style Guide
+# Media Suite Loopback Style Guide
 
 ## Prototype over static functions in model Custom Routes
 
