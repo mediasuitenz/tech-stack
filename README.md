@@ -1,5 +1,15 @@
 # Media Suite Tech
 
+[Set up your machine](bootstrap.md)
+[Choose an IDE](ide.md)
+[Database Notes](databases.md)
+[Git/Github Notes](git.md)
+[How we write Ember](ember-style-guide.md)
+[How we write Loopback](loopback-style-guide.md)
+[Notes on Security](security-guidelines.md)
+[Hosting, Deployment and Patching](hosting-deployment-patching.md)
+[Testing](testing.md)
+
 ### Standard Tools
 
 - ES6
