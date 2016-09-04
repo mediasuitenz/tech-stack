@@ -1,0 +1,10 @@
+[
+	// Selects all instances of current selection
+	// This already exists under ctrl+super+g but is hard to press/remember
+	{ "keys": ["super+shift+a"], "command": "find_all_under" },
+	// Converts tabs to spaces and sets new tab action to spaces
+	{ "keys": ["super+shift+i"], "command": "expand_tabs", "args": { "set_translate_tabs": true } },
+	// Can unbind Quit so that it isn't closed accidentally and undo history is lost
+	//{ "keys": ["super+q"], "command": "unbound" },
+	{ "keys": ["alt+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } }
+]

@@ -1,0 +1,12 @@
+{
+    "disable_auto_align": true,
+    "format_on_save": false,
+    "indent_with_space": true,
+    "passes":
+    [
+        "IndentTernaryConditions"
+    ],
+    "psr1": true,
+    "psr2": false,
+    "version": 3
+}
