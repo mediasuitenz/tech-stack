@@ -94,6 +94,12 @@ We have no standard IDE. Devs are currently using:
   - \- Paid license
 
 
+Don't forget to set:
+```bash
+npm config set save=true
+npm config set save-exact=true
+```
+
 ### Hosting
 
 All projects will have unique hosting requirements and constraints.
