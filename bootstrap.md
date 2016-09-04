@@ -30,7 +30,7 @@ any problems try running `brew doctor` as a first step
         - download binary package from http://www.iterm2.com
     - zsh (replacement for bash shell)
         - `brew install zsh`
-        - review and copy the config files from this repo config-files/.zshrc
+        - review and copy this [config file](.zshrc)
     - ohmyzsh (zsh configured and enhanced)
         - `curl -L http://install.ohmyz.sh | sh`
     - change your default shell to zsh
