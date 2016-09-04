@@ -13,7 +13,8 @@ We have no standard IDE. Devs are currently using:
   - \- Broken package manager
   - \- Paid license
   - \- Errors when using Watchman
-  - \- [Sublime Config Notes](sublime-config.md) [Sublime Config Files](./sublime-config-files)
+  - \- [Sublime Config Notes](sublime-config.md) 
+  - \- [Sublime Config Files](./sublime-config-files)
 - [Atom](https://atom.io/)
   - \+ FOSS clone of SublimeText
   - \+ Great package / plugin ecosystem
