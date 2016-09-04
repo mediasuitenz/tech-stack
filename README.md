@@ -1,6 +1,6 @@
 # Media Suite Tech
 
-- [Set up your machine](bootstrap.md)
+- [Set up your machine (Standard Mac Applications)](bootstrap.md)
 - [Choose an IDE](ide.md)
 - [Database Notes](databases.md)
 - [Git/Github Notes](git.md)
