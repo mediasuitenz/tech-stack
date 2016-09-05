@@ -5,6 +5,7 @@
 - [Database Notes](databases.md)
 - [Git/Github Notes](git.md)
 - [How we write Ember](ember-style-guide.md)
+  - [Ember Plugins we use](ember-plugins.md)
 - [How we write Loopback](loopback-style-guide.md)
 - [Notes on Security](security-guidelines.md)
 - [Hosting, Deployment and Patching](hosting-deployment-patching.md)
