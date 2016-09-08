@@ -25,6 +25,9 @@ Unfortunately it mostly just hides away Leaflet in a custom layer of obscure con
 
 - Matt
 
+### MySQL and MariaDB
+Some spatial quries can be made without needing Postgres. Simple queries such as point in polygon can be made using `ST_Contains` e.g. as done in [the TFNZ project](https://github.com/mediasuitenz/tfnz/).
+
 # To explore:
 
 ## Turfjs
