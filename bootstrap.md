@@ -59,6 +59,7 @@ any problems try running `brew doctor` as a first step
         - https://docs.docker.com/docker-for-mac/
     - vagrant (Virtualmachine controller)
         - download binary package from https://www.vagrantup.com/downloads.html
+        - add vagrant-basebox https://github.com/mediasuitenz/vagrant-basebox
     - hub (github tools)
         - `brew install hub`
     - dash (offline documentation)
