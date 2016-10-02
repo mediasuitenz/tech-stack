@@ -35,7 +35,6 @@
 ```javascript
  Worksite.remoteMethod('startWork', {
    accepts: [
-     {arg: 'id', type: 'number', required: true},
      {arg: 'data', type: 'object', http: {source: 'body'}}
    ],
    isStatic: false,
