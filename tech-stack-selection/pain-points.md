@@ -23,17 +23,16 @@ What is it about our current tech stack that causes us to take too long?
 * Configuration is a little bit confusing.  Easy to lose time with to forgotten setting.
 * Loopback code quality is generally poor, or at least not easy to understand.  When you have to drop into the library code to understand what is going on, you can waste a lot of time.
 * No control over which order the hooks run (e.g. two `beforeRemote('create', ...` hooks will run in whatever order Loopback likes, something we can't influence)
-* No out-the-box test solution.  While in reality it's easy enough to hit end-points use Supertest or similar, it's still painful to organise, set-up, tear-down your test data each time and can also be pretty slow execution.  **note: MWS has some solutions to this, not sure generic they are.**  Also note that in MWS, brittle test data caused way more failed tests than any actual bugs.
+* No out-the-box test solution.  While in reality it's easy enough to hit end-points use Supertest or similar, it's still painful to organise, set-up, tear-down your test data each time and can also be pretty slow execution.  **note: MWS has some solutions to this, not sure generic they are.  Also suffers from brittle test data. **
 * Doesn't appear to have a strong road-map or evidence of issues being addressed in a timely fashion.  Confidence in it is low.
 
 
 Ember / JSON-API spec
-
 * Transactional saves of multiple models is currently impossible without writing a fair amount of custom code
- * This is not just Ember's problem - it's not currently possible within the JSON-API spec.  However, even once that is resolve, it's not clear how long Ember Data will take to implement
+ * This is not just Ember's problem - it's not currently possible within the JSON-API spec.  However, even once that is resolved, it's not clear how long Ember Data will take to implement
+ * Can't currently determine if a model is dirty based on changes in its relationships; so can be difficult to know what to roll-back when cancelling crud input
 * Duplication of our Data Models on client and server
 * Data Models that represent the database rather than from any application need.  Often coincide, sometimes don't.
 * Pages can have many, many requests on.  Side-loading up front has massive benefit, but still doesn't entirely solve the problem.
 * Ember Data as a cache is not that helpful between pages.  We invariably end up refetching everything we need because we can't be sure of the current state of the cache and we need to side-load.
-* Forms containing multiple models are hard - both because of the transactional save issue mentioned previous, but also in determining if changes have been made if those changes are in relationships.
-* Performance just isn't as fast as we would like.  Not sure if this is XHRs or heavy Javascript usage.
+* Performance just isn't as fast as we would like.  Not sure if this is XHRs or heavy Javascript usage.  First load can be slow.

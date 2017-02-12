@@ -4,12 +4,13 @@ The Media Suite development is currently going through a long-running decision m
 1. Document pain-points of the current stack
 2. Establish criteria by which we will choose a new technology
 3. Create a short-list of options, investigate further
-4. Pick
+4. Pick one
 
 
 ## Actions
+Suggested timeline, with the goal of having something concrete to discuss before the Javascript conference when we have a collection of developers.
 * JH to document 1 & 2, create a tech-stack PR - 13/02/17
-* Tech Stack committee to comment, feedback - 24/02/17
+* Comments and feedback - 24/02/17
 * Meeting to finalise any changes and merge - 27/02/17
 * Tech Stack committee to document options and explain how the criteria are met, or not - 7/03/17
 * Group discussion - 8/03/17
