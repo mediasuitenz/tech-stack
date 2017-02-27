@@ -6,6 +6,7 @@ The criteria themselves are designed to be items we can prove are supported, or 
  * Good docs, canonical answers
  * Can get access to expertise for learning and problem solving
  * Well used product with road-map
+
  
 * Speed of development
  * Has good IDE support / step-by-step debugger
@@ -14,6 +15,13 @@ The criteria themselves are designed to be items we can prove are supported, or 
  * New hires need to be able to hit the ground running
  * Adding new features that the framework doesn't support out the box should be easy
  * Library code is clean and understandable
+
+* Framework core functionality
+ * Single framework has the flexibility to support multiple architectures (API for SPA, multi-page app, CMS, etc)
+ * Great stability; not iterating too quickly and good LTS strategy
+ * Thoughtful upgrade path through the versions to ensure we're not left with a huge cliff scale in order to upgrade 
+ * Ease of maintenance for completed projects
+ * Range of mature plugins for different authentication strategies
 
 * Roles and permissions
  * Roles and permissions baked in
@@ -24,14 +32,18 @@ The criteria themselves are designed to be items we can prove are supported, or 
  * Any ORM model layer can be constructed from an existing db, including relationships
  * ORM supports joins and more complex queries
  * Should be able to drop-down to SQL and re-hydrate objects from the results-set
-
+ * Needs to not be painful for support of spatial queries/PostGIS
 
 * Good test story
  * Known existing best practices around how to test and what to test
  * Provides a framework for execution of tests
  * Stubs out tests to reduce initial boiler plate
+ * Set-up/teardown of test data has best practice documented or inbuild support
+ * Fast
 
 * Ember Support (if we keep using Ember)
  * JSON-API support if we keep using Ember data
  * Ability to generate query DSL request from client (if Ember Data) or easy to create custom end-point to provide the right data
  
+* Fun / Interest
+ * Has to be something we're interested in and can attract the right people to work on
