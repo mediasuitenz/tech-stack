@@ -122,9 +122,11 @@ alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--
 * [Firefox Dev Tools](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor)
 
 ## Resources:
+* [OWASP top 10 and advice](https://www.owasp.org/index.php/Top_10_2017-Top_10)
 * [XSS Evasion Cheat Sheet](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
 * [XSS Polyglot Explanation](https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
 * [SQL Injection Prevention Cheatsheet](https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet)
+* [Matt's security talk slides](https://docs.google.com/presentation/d/1zBEEuFvCiyYgTupIdN3-DfUP4Gwmahe-28YWzamc9E8)
 
 ## TODO:
 * Group roughly in terms of priority
