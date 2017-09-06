@@ -8,3 +8,4 @@ We use https://emberobserver.com/ to find plug-ins
 * [eslint-config-standard](https://github.com/standard/eslint-config-standard) - Slightly more tricky to set up, but you end up with better Standard.js support - including the correct linting when running `ember s`
 * [ember-truth-helpers](https://github.com/jmurphyau/ember-truth-helpers) - Vital for basic comparisons within templates
 * [ember-route-action-helper](https://github.com/DockYard/ember-route-action-helper) - Create an actions hash in your Route files that you can access from the template.  With this, the need for Controllers is limited to support for query params.
+* [ember-power-select](https://github.com/cibernox/ember-power-select) - Much more flexible select component.  Perfect if you want to filter a list or do an ajax search to generate the list.
