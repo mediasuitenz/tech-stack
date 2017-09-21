@@ -16,14 +16,11 @@
 ### Standard Tools
 
 - ES6
-- nodejs 4.2.* LTS
-- npm2
-- [Ember 2.*](http://emberjs.com/)
-- [Loopback](https://strongloop.com/node-js/loopback-framework/)
+- node LTS
+- npm
+- [Ember](http://emberjs.com/)
 - [node-standard-style](https://github.com/feross/standard) Linting
 - [Moment.js](http://momentjs.com/) Time Library
-- [ramda](https://github.com/ramda/ramda) Utility Library
-- [bluebird](http://bluebirdjs.com) Potential Promise Library
 
 ### Other tools
 - Silverstripe CMS, Required for government projects
