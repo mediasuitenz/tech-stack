@@ -12,6 +12,7 @@
 - [Hosting, Deployment and Patching](hosting-deployment-patching.md)
 - [Testing](testing.md)
 - [Geospatial Tools](geospatial.md)
+- [Definition of Done](https://docs.google.com/document/d/1l5Hc1h9UR_7sZFWPiRBjWUPh8efyw0NOmrJj2U5m5og/edit#)
 
 ### Standard Tools
 
