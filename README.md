@@ -10,6 +10,7 @@
 - [Notes on Security](security-guidelines.md)
 - [Hosting, Deployment and Patching](hosting-deployment-patching.md)
 - [Testing](testing.md)
+- [Geospatial Tools](geospatial.md)
 
 ### Standard Tools
 
