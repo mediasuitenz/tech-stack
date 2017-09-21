@@ -1,5 +1,6 @@
 # Media Suite Tech
 
+- [Developer Onboarding Checklist](https://trello.com/b/ApX3n43q/developer-onboarding)
 - [Set up your machine (Standard Mac Applications)](bootstrap.md)
 - [Choose an IDE](ide.md)
 - [Database Notes](databases.md)
