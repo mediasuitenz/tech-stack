@@ -115,3 +115,8 @@ any problems try running `brew doctor` as a first step
  - You may wish to update Finder so that it shows hidden files:
     -  Open a Terminal Window and type `defaults write com.apple.finder AppleShowAllFiles YES`
     -  Restart Finder `killAll Finder`
+ - The new USB-C MacBooks use a strategy for cooling that isn't well suited to development work - changing the settings using [smcFanControl](https://github.com/hholtmann/smcFanControl) can help with this.
+    -  `brew cask install smcfancontrol`
+    -  Select the `Higher RPM` favorite.
+    -  Change the Exhaust fan setting to something reasonably high but not too noisy - eg. 4300rpm
+    -  Make sure `Autoapply favorite when powersource changes` is checked and change `AC-Power` and `Charging` to use the `Higher RPM` favorite.
