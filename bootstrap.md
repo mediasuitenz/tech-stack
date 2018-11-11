@@ -21,29 +21,28 @@ Time-tracking is performed using the commercial Toggl Application, with a link t
 Postgres local database and client
 - `brew cask install postgres`  
 - `brew cask install postico`
-MySql Client
-- `brew cask install sequel-pro`
+- `brew cask install sequel-pro` MySql Client
 
 ## Browsers
 - `brew cask install chrome`
 - `brew cask install firefox` 
 
 ## Programming Languages
-Python
-Currently different projects are running different stacks
-pyenv and pipenv are recommended, you should only use your system install of Python to launch other versions of Python
+### Python
+- Currently different projects are running different stacks
+- pyenv and pipenv are recommended, you should only use your system install of Python to launch other versions of Python
 
-Node
+### Node
 - `brew install node` Node binary (you'll use this one primarily for launching other versions of node)
 - `npm install --global n` Adds `n` command for managing Node versions
 - `which node` and `which npm` should return valid paths, if not try adding `export PATH=/path/to/node/bin:$PATH` to your ~/.bashrc or ~/.zshrc
 - To switch versions of node for each project, run the n command with a version number, eg: `n 7`, to get and activate the latest version of Node 7 for all terminals
 
 ## Virtual Machines
-`brew cask install docker`
-If you need to run an older VM
-`brew cask install virtualbox
-`brew cask install vagrant`
+- `brew cask install docker`
+### If you need to run an older VM
+- `brew cask install virtualbox` 
+- `brew cask install vagrant`
 
 ## Communication tools
 - `brew cask install slack` Work chat tool
@@ -53,14 +52,14 @@ If you need to run an older VM
 - `brew cask install spectacle` Shortcuts for arranging windows
 
 ## Better Terminal (Optional)
-bash/terminal route
+### bash and default Terminal app route
 - `brew install bash` downloads a recent copy of bash to run alongside Mac's in-built old one
 - `brew install bash-completion` autocompletion for bash
 - https://github.com/mrzool/bash-sensible Sensible defaults for bash
 - Set "General->Shells open with command" in Mac's Terminal app to the new version of Bash, probably at `/usr/local/bin/bash`
 - https://github.com/tomislav/osx-terminal.app-colors-solarized
 
-zsh route
+### zsh and iTerm2 route
 - `brew cask install iterm2` Better Terminal Emulator
 - `brew install zsh` Better interactive default shell
 - review and copy this [config file](.zshrc)
