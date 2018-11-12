@@ -24,7 +24,7 @@ Postgres local database and client
 - `brew cask install sequel-pro` MySql Client
 
 ## Browsers
-- `brew cask install chrome`
+- `brew cask install google-chrome`
 - `brew cask install firefox` 
 
 ## Programming Languages
@@ -46,7 +46,7 @@ Postgres local database and client
 
 ## Communication tools
 - `brew cask install slack` Work chat tool
-- `brew cask install zoom-us` Video conferencing tool
+- `brew cask install zoomus` Video conferencing tool
 
 ## Productivity
 - `brew cask install spectacle` Shortcuts for arranging windows
