@@ -7,6 +7,7 @@ any problems try running `brew doctor` as a first step
 
 ## Git Config
 - Create a key and add it to github: https://help.github.com/articles/generating-ssh-keys
+- Request to have your github account added to the mediasuitenz organisation
 - `git config --global user.name "John Doe"`
 - `git config --global user.email johndoe@example.com`
 - `git config --global color.ui true`
@@ -49,7 +50,8 @@ Postgres local database and client
 - `brew cask install zoom-us` Video conferencing tool
 
 ## Productivity
-- `brew cask install spectacle` Shortcuts for arranging windows
+- `brew cask install rectangle` Shortcuts for arranging windows
+- https://rectangleapp.com/
 
 ## Better Terminal (Optional)
 ### bash and default Terminal app route
