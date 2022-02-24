@@ -2,7 +2,7 @@
 
 ### Onboarding / general Dev notes:
 - [Developer Onboarding](https://mediasuite.atlassian.net/wiki/spaces/SUITE/pages/4994760734/Onboarding+for+developers) <!-- TODO: Needs to be updated with correct link once page location decided -->
-- [Git/Github Notes](onboarding/git.md)
+- [Git/Github Notes](https://mediasuite.atlassian.net/wiki/spaces/SUITE/pages/4996136977/Git)
 - [Pull Requests](onboarding/pull-requests.md)
 - [Choosing an IDE](onboarding/ide.md)
 
