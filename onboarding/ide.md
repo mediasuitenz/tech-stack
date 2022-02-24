@@ -1,6 +1,8 @@
 ## IDEs
 
-We have no standard IDE. Devs are currently using:
+We have no standard IDE, however most people tend to use VS Code.
+
+Here is a list of IDEs Devs are currently using:
 - [vim](http://www.manpages.info/linux/vi.1.html)
   - \+ Runs everywhere
   - \+ Powerful

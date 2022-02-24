@@ -1,3 +1,4 @@
+<!-- TODO: tidy up this file - still necessary? -->
 ## Package manager (homebrew)
 Quite a few things can be installed via homebrew using `brew install`. You can use
 `brew search` to find packages and `brew list` to see installed packages. If you have
