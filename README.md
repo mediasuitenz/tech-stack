@@ -1,6 +1,6 @@
 # Media Suite Tech
 
-- [Developer Onboarding Checklist](https://trello.com/b/ApX3n43q/developer-onboarding)
+- [Developer Onboarding](https://mediasuite.atlassian.net/wiki/spaces/SUITE/pages/4994760734/Onboarding+for+developers) <!-- TODO: Needs to be updated with correct link once page location decided -->
 - [Set up your machine (Standard Mac Applications)](bootstrap.md)
 - [Choose an IDE](ide.md)
 - [Database Notes](databases.md)
