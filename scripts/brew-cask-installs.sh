@@ -20,6 +20,10 @@ brew install --cask docker
 # Postico
 brew install --cask postico
 
+# Zoom
+
+brew install --cask zoomus
+
 # Chrome
 brew install --cask google-chrome
 
@@ -28,9 +32,6 @@ brew install --cask firefox
 
 # Brave
 brew install --cask brave-browser
-
-# docker
-brew install docker
 
 # Altair Graphql Client
 brew install --cask altair-graphql-client

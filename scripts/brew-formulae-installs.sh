@@ -64,3 +64,6 @@ brew install vim
 
 # ZSH, also called the Z shell, is an extended version of the Bourne Shell (sh) with plenty of new features, and support for plugins and themes
 brew install zsh
+
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
