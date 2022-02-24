@@ -1,6 +1,6 @@
 # Media Suite Tech
 
-### Onboarding / general Dev notes:
+### Onboarding/general dev notes:
 - [Developer Onboarding](https://mediasuite.atlassian.net/wiki/spaces/SUITE/pages/4994760734/Onboarding+for+developers) <!-- TODO: Needs to be updated with correct link once page location decided -->
 - [Git/Github Notes](https://mediasuite.atlassian.net/wiki/spaces/SUITE/pages/4996136977/Git)
 - [Pull Requests](onboarding/pull-requests.md)
@@ -17,11 +17,3 @@
 - [Notes on Security](tech/security-guidelines.md)
 - [Hosting, Deployment and Patching](tech/hosting-deployment-patching.md)
 - [Definition of Done](https://docs.google.com/document/d/1l5Hc1h9UR_7sZFWPiRBjWUPh8efyw0NOmrJj2U5m5og/edit#)
-
-#### Ember
-  - [How we write Ember](ember/ember-style-guide.md)
-  - [Ember Plugins we use](ember/ember-plugins.md)
-  - [ember-cli-ramda-extended](https://github.com/mediasuitenz/ember-cli-ramda-extended)
-
-
-
