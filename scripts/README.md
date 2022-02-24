@@ -2,7 +2,7 @@
 
 
 ### Pre-requisites and notes
-- Prior to running installation, please ensure you have installed Git and Homebrew.
+- Prior to running installation, please ensure you have installed Git and Homebrew, see [developer onboarding](https://mediasuite.atlassian.net/wiki/spaces/SUITE/pages/4994760734/Onboarding+for+developers).
 - Optional software is denoted with an asterisk `*`
 
 ### Executing shell files
