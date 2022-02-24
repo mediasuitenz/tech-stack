@@ -6,7 +6,7 @@
 - Optional software is denoted with an asterisk `*`
 
 ### Executing shell files
-- Shell files can be executed using the following command in the terminal: `sh </filename>`
+- Shell files can be executed using the following command in the terminal: `sh <file-location/filename>`
 
 #### Brew Formulae Installs
 
