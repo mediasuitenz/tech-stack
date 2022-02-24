@@ -57,11 +57,10 @@ Postico* | [PostGres client for mac](https://eggerapps.at/postico/)
 Azure Data Studo* | [Cross platform database tool](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
 Table Plus* | [Database management tool](https://tableplus.com/)
 
-#### VSCode Extensions
+### VSCode Extensions
 
-| Item |
-|---|
 |General:|
+|---|
 [Auto-close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 [Bracket Pair Coloriser](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
@@ -70,14 +69,20 @@ Table Plus* | [Database management tool](https://tableplus.com/)
 [Javascript EJS Support](https://marketplace.visualstudio.com/items?itemName=DigitalBrainstem.javascript-ejs-support)
 [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 [Standard JS](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs)
+
 |PHP/Silverstripe:|
+|---|
 [Dotenv](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
 [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 [PHP Code Sniffer](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs)
 [PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver)
 [Silverstripe](https://marketplace.visualstudio.com/items?itemName=adrianhumphreys.silverstripe)
+
 |Python/Django:|
+|---|
 [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
 [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
 |Ember/React:|
+|---|
 [Ember Language Server](https://marketplace.visualstudio.com/items?itemName=EmberTooling.vscode-ember)
