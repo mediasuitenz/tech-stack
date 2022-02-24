@@ -7,7 +7,6 @@
 - [Git/Github Notes](onboarding/git.md)
 - [Pull Requests](onboarding/pull-requests.md)
 - [Choosing an IDE](onboarding/ide.md)
-- [Database Notes](onboarding/databases.md)
 
 ---
 ## Tech specific notes:
