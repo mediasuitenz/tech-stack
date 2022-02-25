@@ -65,6 +65,7 @@ Azure Data Studo* | [Cross platform database tool.](https://docs.microsoft.com/e
 Table Plus* | [Database management tool.](https://tableplus.com/)
 
 ### VSCode Extensions
+*All extensions are optional. Just some handy suggestions. 
 
 |General:|
 |---|
