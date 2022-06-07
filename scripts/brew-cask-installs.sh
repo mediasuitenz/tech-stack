@@ -21,8 +21,7 @@ brew install --cask docker
 brew install --cask postico
 
 # Zoom
-
-brew install --cask zoomus
+brew install --cask zoom
 
 # Chrome
 brew install --cask google-chrome
@@ -36,7 +35,7 @@ brew install --cask brave-browser
 # Altair Graphql Client
 brew install --cask altair-graphql-client
 
-#Azure Data Studo
+# Azure Data Studo
 brew install --cask azure-data-studio
 
 # Figma 
@@ -62,3 +61,6 @@ brew install --cask spotify
 
 # Table Plus
 brew install --cask tableplus
+
+# Fly Cut
+brew install --cask flycut

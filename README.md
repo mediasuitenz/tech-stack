@@ -53,7 +53,7 @@ Zoom | [Video Calling Software](https://zoom.us/)
 Chrome* | [Web browser](https://www.google.com/chrome/)
 Firefox* | [Web browser](https://www.mozilla.org/en-US/firefox/new/)
 Brave* | [Web browser](https://brave.com/)
-Altair Graphql Client*z | [GraphQL server debugger](https://altair.sirmuel.design/)
+Altair Graphql Client* | [GraphQL server debugger](https://altair.sirmuel.design/)
 Figma*| [UI and UX design application.](https://www.figma.com/)
 Gimp*| [image editor](https://www.gimp.org/)
 MAMP*| [Local server environment](https://www.mamp.info/en/windows/)
@@ -63,6 +63,7 @@ Rectangle* | [Move and resize windows in macOS using keyboard shortcuts or snap 
 Postico* | [PostGres client for mac.](https://eggerapps.at/postico/)
 Azure Data Studo* | [Cross platform database tool.](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
 Table Plus* | [Database management tool.](https://tableplus.com/)
+Fly Cut* | [Clipboard manager tool](https://github.com/TermiT/Flycut)
 
 ### VSCode Extensions
 *All extensions are optional. Just some handy suggestions. 
