@@ -38,7 +38,7 @@ brew install --cask altair-graphql-client
 # Azure Data Studo
 brew install --cask azure-data-studio
 
-# Figma 
+# Figma
 brew install --cask figma
 
 # Gimp
@@ -51,7 +51,7 @@ brew install --cask mamp
 brew install --cask owasp-zap
 
 # Postgres
-brew install --cask postgres
+brew install --cask postgresql
 
 # Rectangle
 brew install --cask rectangle
