@@ -5,9 +5,6 @@
 # Node: is a JavaScript runtime built on Chrome's V8 JavaScript engine
 brew install node
 
-# Node Version Manager
-brew install nvm
-
 # Node Package Manager *** Globally installed ***
 npm install -g npm
 
@@ -20,7 +17,7 @@ brew install gdal
 # Git
 brew install git
 
-# HTOP: performance monitoring for unix systems 
+# HTOP: performance monitoring for unix systems
 brew install htop
 
 # HTTPD: Enables the running of local php servers
