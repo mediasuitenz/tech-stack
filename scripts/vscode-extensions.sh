@@ -1,12 +1,9 @@
 #
 # General extensions for all devs:
-# 
+#
 
 # https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-close-tag
-
-# https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer
-code --install-extension coenraads.bracket-pair-colorizer
 
 # https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
 code --install-extension ms-azuretools.vscode-docker
@@ -28,12 +25,12 @@ code --install-extension esbenp.prettier-vscode
 
 
 
-# 
+#
 # Tech stack specific extensions:
-# 
+#
 
-# 
-# 
+#
+#
 # PHP/Silverstripe extensions:
 
 # https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv
@@ -56,8 +53,8 @@ code --install-extension adrianhumphreys.silverstripe
 
 
 
-# 
-# 
+#
+#
 # Django/Python extensions:
 
 # https://marketplace.visualstudio.com/items?itemName=ms-python.python
@@ -68,10 +65,9 @@ code --install-extension ms-python.vscode-pylance
 
 
 
-# 
-# 
+#
+#
 # Ember/React extensions:
 
 # https://marketplace.visualstudio.com/items?itemName=EmberTooling.vscode-ember
 code --install-extension embertooling.vscode-ember
-
