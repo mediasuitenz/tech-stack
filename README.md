@@ -21,7 +21,6 @@
 |--- | --- |
 Node| [A JavaScript runtime built on Chrome's V8 JavaScript engine.](https://nodejs.org/en/)
 Node Version Manager | [Manages versions of Node being used within projects.](https://github.com/nvm-sh/nvm)
-Node Package Manager | [Package manager for Javascript Modules.](https://www.npmjs.com/)
 Yarn | [Package manager for Javascript Modules.](https://yarnpkg.com/)
 GDAL | [Translator library for raster and vector geospatial data.](https://gdal.org/)
 HTOP| [Interactive Process Viewer.](https://htop.dev/)
@@ -66,7 +65,7 @@ Table Plus* | [Database management tool.](https://tableplus.com/)
 Fly Cut* | [Clipboard manager tool](https://github.com/TermiT/Flycut)
 
 ### VSCode Extensions
-*All extensions are optional. Just some handy suggestions. 
+*All extensions are optional. Just some handy suggestions.
 
 |General:|
 |---|
@@ -95,3 +94,9 @@ Fly Cut* | [Clipboard manager tool](https://github.com/TermiT/Flycut)
 |Ember/React:|
 |---|
 [Ember Language Server](https://marketplace.visualstudio.com/items?itemName=EmberTooling.vscode-ember)
+
+### Manual Installs
+
+The following items need to be manually installed:
+
+- [Node Package Manager](https://www.npmjs.com/) - Package manager for Javascript Modules ((installation instructions)[https://github.com/nvm-sh/nvm#installing-and-updating]).
