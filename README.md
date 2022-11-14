@@ -70,7 +70,6 @@ Fly Cut* | [Clipboard manager tool](https://github.com/TermiT/Flycut)
 |General:|
 |---|
 [Auto-close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-[Bracket Pair Coloriser](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 [Gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
